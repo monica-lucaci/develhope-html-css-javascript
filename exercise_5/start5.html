@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Registration form</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="pasw">Enter your password:</label>
+    <input type="password" id="passw" required>
+    <label for="flname">Name and Lastname:</label>
+    <input type="text" id="flname" name="flname" required>
+    <label for="lname">Date of birth:</label>
+    <input date="text" id="date" name="date of birth" required> 
+    <label for="tel">Enter your phone number:</label>
+    <input type="tel" id="tel" required><br><br>
+    <label for="plan">Select a Plan:</label>
+    <select id="plan" name="plan">
+        <option value="free">Free Plan</option>
+        <option value="platinum">Platinum Plan ($7.99/month)</option>
+        <option value="silver">Silver Plan ($15.99/month)</option>
+        <option value="gold">Gold Plan ($24.99/month)</option>
+    </select>
+    <h2>Upgrade Options</h2>
+    <label for="pro">Pro Plan:</label>
+    <input type="checkbox" id="pro" name="pro">
+    <label for="pro">Upgrade to Pro Plan</label><br>
+    <label for="credit-card">Credit Card Number:</label>
+    <input type="text" id="credit-card" name="credit-card" required>
+    <label for="cvc">CVC:</label>
+    <input type="text" id="cvc" name="cvc" maxlength="3" required>
+    <label for="exp">Expiration Date:</label>
+    <input type="text" id="exp" name="expiration-date" placeholder="MM/YYYY" required>
+    <label for="adress">Billing Adress:</label>
+    <input type="text" id="adress" name="adress" required>
+    
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
