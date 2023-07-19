@@ -1,0 +1,17 @@
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+section,
+header,
+footer {
+    border: 2px solid rgb(180, 178, 178);
+    padding: 1rem;
+}
+h1{
+    font-size: 60px;
+}
+p,a,figcaption{
+    font-size: 40px;
+}
