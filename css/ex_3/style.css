@@ -1,0 +1,21 @@
+:root{
+    --black :  #011212;
+    --coral : #ff8800;
+    --width : 100px;
+    --height : 100px;
+    --bradius : 50px;
+}
+
+
+
+
+body {
+    background-color: var(--black);
+}
+
+.ball {
+    width: var(--width);
+    height: var(--height);
+    background-color:var(--coral);
+    border-radius: var(--bradius);
+}
