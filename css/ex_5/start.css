@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    
+}
+ 
+ #yellow{
+    order : -1;
+}
+
+#red{
+    order: -1;
+} 
+#orange{
+flex-basis: 200%;
+}
