@@ -1,0 +1,44 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows:auto auto auto auto;
+    grid-template-areas:
+      "green green green"
+      "yellow red blue"
+      "yellow red blue"
+      "orange orange blue";
+    height: 100vh;
+    text-align: left;
+   
+  }
+
+  #green {
+    grid-area: green;
+    
+  }
+
+  #yellow {
+    grid-area: yellow;
+   
+  }
+
+  #red {
+    grid-area: red;
+  
+  }
+
+  #blue {
+    grid-area: blue;
+
+  }
+
+  #orange {
+    grid-area: orange;
+  }
+
+  ul {
+  padding: 0;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+}
