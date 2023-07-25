@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(53, 53, 59);
+    background-color: rgb(77, 175, 175);
     
     
   }
@@ -12,7 +12,9 @@ body {
     align-items: center;
     border-bottom:2px solid white;
     gap: 20px;
-  
+    background-color: rgb(53, 53, 59);
+    padding:10px;
+    height: 55px;;
   }
   .navbar a{
     text-decoration: none;
@@ -92,14 +94,19 @@ body {
     
   }
 input[type="text"]{
-  border:1px solid white;
+  border:hidden;
   font-size: 18px;
+  border-radius: 4px;
+  height: 40px;
 }
 .search-btn{
   background-color: transparent;
   color:green;
   border: 1px solid green;
+  border-radius: 4px;
   font-size: 18px;
+  height: 42px;
+  
 }
 .search-btn:hover{
   color: aqua;
