@@ -7,16 +7,24 @@
     text-align: center;
     padding:5px;
     background-color: rgb(237, 242, 242);
+    
 }
 .grid{
     display: grid;
     grid-template-columns:repeat(4,1fr);
     grid-template-rows:70px 80px 80px 80px 80px 80px;
+    max-width: 28%;
+    margin: auto;
+    margin-top: 50px;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
     
 }
  
 
 #zero{
+    display: grid;
     grid-column: span 4 ;
     background-color: rgb(65, 77, 77);
     text-align: end;
