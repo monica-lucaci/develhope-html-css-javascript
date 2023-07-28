@@ -8,11 +8,14 @@ body{
     height: auto;
 }
 
-section,
-header,
-footer {
+.card{
     border: 2px solid rgb(180, 178, 178);
-    padding: 1rem;
+   border-radius: 8px;
+}
+
+header, .card-item , footer{
+    border-top:2px solid grey;
+    padding: 10px;
 }
 h1{
     font-size: 30px;
@@ -20,3 +23,9 @@ h1{
 p,a,figcaption{
     font-size: 18px;
 }
+
+.card-links a {
+    margin-right: 12px;
+    line-height: 80px;
+}
+
