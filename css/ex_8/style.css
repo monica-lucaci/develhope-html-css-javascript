@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-image:linear-gradient(to bottom, rgb(220, 149, 220), rgb(151, 151, 216));
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width:350px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, rgb(163, 163, 163), white);
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 80px;
+}
+
+.card-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-avatar img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.card-image-container>img {
+    height: 250px;
+    width: 100%;
+}
+
+.card-icons img {
+    height: 30px;
+    width: 30px;
+}
+
+.card-icons {
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.card-text {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.card-text span {
+    font-weight: bold;
+}
+
+
+/* Dropdown container */
+.card-dropdown {
+    position: sticky;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.dropdown-button {
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    color: #5b5656;
+    font-size: larger;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ .dropdown-content li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown-toggle:checked~.dropdown-content {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .cards-container {
+        flex-wrap: wrap;
+    }
+    body {
+        background-image:linear-gradient(to bottom, rgb(221, 115, 115), rgb(189, 161, 158));
+    }
+}
+
+@media(max-width: 375px) {
+    .cards-container {
+        flex-direction: column;
+    }
+    body {
+   background-image:linear-gradient(to bottom, aqua,white);}
+}
