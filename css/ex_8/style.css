@@ -117,6 +117,7 @@ body {
 @media(max-width: 768px) {
     .cards-container {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     body {
         background-image:linear-gradient(to bottom, rgb(221, 115, 115), rgb(189, 161, 158));
