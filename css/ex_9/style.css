@@ -1,0 +1,186 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(77, 175, 175);
+
+
+}
+
+.navbar {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid white;
+    gap: 20px;
+    background-color: rgb(53, 53, 59);
+    padding: 0 10px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 560;
+    color: #f9f9f9;
+}
+
+.home {
+    font-size: 20px;
+    font-weight: 520;
+    color: #f9f9f9;
+}
+
+.link {
+    font-size: 18px;
+    font-weight: 480;
+    color: grey;
+
+}
+
+#disabled {
+    font-size: 18px;
+    font-weight: 480;
+    color: rgb(78, 77, 77);
+
+
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;
+    color: gray;
+    font-weight: 480;
+    border: none;
+    outline: none;
+
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: aqua;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: aqua
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    margin-left: auto;
+
+}
+
+input[type="text"] {
+    border: hidden;
+    font-size: 18px;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.search-btn {
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    font-size: 18px;
+    height: 42px;
+
+}
+
+.search-btn:hover {
+    color: aqua;
+}
+
+.search-btn:active {
+    background-color: grey;
+    color: aqua;
+}
+
+#toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px) {
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .navbar>a,
+    .dropdown,
+    .search {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-icon::before {
+        content: "\2630";
+        /*  "hamburger icon" symbol ☰ */
+    }
+
+    #toggle:checked+.hamburger-icon::before {
+        content: "\00d7";
+    }
+
+    #toggle:checked+.hamburger-icon::before {
+        transform: rotate(45deg);
+    }
+
+    #toggle:checked+.hamburger-icon::after {
+        transform: rotate(-45deg);
+    }
+
+
+    /*keep working on actually showing the menu items in a column*/
+    .toggle:checked ~.navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
