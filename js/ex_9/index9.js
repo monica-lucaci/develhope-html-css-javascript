@@ -1,16 +1,24 @@
 const order = {
-  customer:{
-    address:{
-      city:"a"}
+  customer: {
+    address: {
+      city: ""
     }
+  }
 };
+
+
+if (!order.customer?.address?.city) {
+  console.log('City is required');
+}
 
 /*if (order && order.customer && order.customer.address && !order.customer.address.city) {
   console.log('City is required');
 }
 else console.log(order.customer.address.city);*/
 
-let city=Object.values(order.customer.address.city);
+
+
+/*let city=Object.values(order.customer.address.city);
 if (city==false){
-console.log('City is required');}
-else console.log(city);
+console.log('City is required');}*/
+
