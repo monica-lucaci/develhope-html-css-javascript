@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  background-color: rgb(217, 217, 59);
+}
+
+.navbar {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.button button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  height: 50px;
+  width: 170px;
+}
+
+.button button:hover {
+  background-color: rgb(185, 73, 73);
+}
+
+.title-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px 100px;
+    gap:80px;
+}
+
+.title {
+    font-size: 120px;
+    letter-spacing: -0.5rem;
+    text-align: center;
+    line-height: 160px;
+}
+
+.title h1{
+    font-weight: 580;
+}
+
+.title-description {
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    margin:0 80px;
+}
+
+.title-description h3{
+    font-weight: 400;
+}
+
+.title-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    width:260px;
+    border-radius: 40px;
+    font-size: 28px;
+    font-weight: 200;
+}
