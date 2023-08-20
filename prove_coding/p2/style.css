@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("download.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding: 20px 40px;
+    height:56px;
+}
+
+.nav-l {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:50px;
+}
+
+
+.nav-l-links {
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.nav-l-links a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 248, 248);
+}
+
+.logo{
+    vertical-align: middle;
+    color: #fcfeff
+}
+.logo svg:hover {
+fill :red;
+}
+
+.nav-r{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:30px;
+}
+
+.nav-r a{
+    text-decoration: none;
+    font-size:22px;
+}
